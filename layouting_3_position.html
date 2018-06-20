@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style>
+
+.layout-content {
+	text-align: center;
+	margin: auto;
+	max-width: 1000px;
+	padding: 10px;
+	position: relative;
+}
+
+.text-align {
+	text-align: left;
+}
+
+.background {
+	background-color: antiquewhite;
+}
+
+.logo {
+	height: 80px;
+	background-color: blue;
+}
+
+.banner {	
+	padding: 10px;
+	height: 110px;
+	background-color: purple;
+}
+
+.banner_text {
+	display: inline-block;
+	float: left;
+	width: 80%;
+	height: 70px;
+	background-color: yellow;
+}
+
+.sidebar {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	float: right;
+	width: 170px;
+	height: 300px;
+	z-index: 1;
+	background-color: green;
+}
+
+.content {
+	height: 300px;
+	width: 80%;
+	background-color: orange;
+	margin-bottom: 10px;
+}
+
+.content_footer {
+	height: 40px;
+	background-color: beige;
+}
+
+.footer {
+	height: 60px;
+	background-color: red;
+}
+
+.sitemap {
+	height: 30px;
+	background-color: turquoise;
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<div class="layout-content background ">
+		<div class="logo text-align">
+			Logo/nav/tagline
+		</div>
+	</div>
+	
+	<div class="banner">
+		<div class="layout-content text-align">
+			banner will run across the website
+			<div class="banner_text text-align">
+				text on banner
+			</div>
+			<div class="sidebar">
+				Sidebar
+			</div>
+		</div>	
+	</div>
+	
+	<div class="layout-content background">	
+		<div class="content text-align">
+			Content
+		</div>
+		
+		<div class="content_footer">
+			content footer
+		</div>		
+	</div>
+	
+	<div class="footer">
+		Footer will run across the page
+		<div class="layout-content">
+			<div class="sitemap text-align">
+				copyright and sitemap
+			</div>
+		</div>
+	</div
+	
+</body>
+
+</html>

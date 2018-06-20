@@ -1,0 +1,97 @@
+<!-- Ansatz mit 6 Spalten im mittleren Feld -->
+<!-- es ist zwar ein Versatz der mittleren Zellen zu sehen, aber weiter komme ich mit dem Ansatz nicht -->
+
+<html>
+
+<head>
+
+<style>
+
+table {
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-weight: bold;
+}
+
+.header_footer {
+	height: 60px;
+}
+
+.light_blue {
+	background-color: deepskyblue;
+	padding: 20px;
+}
+
+.green {
+	background-color: green;
+	text-align: center;
+}
+
+.purple {
+	background-color: purple;
+	text-align: center;
+}
+
+.orange{
+	background-color: orange;
+	text-align: center;
+}
+
+.blue {
+	background-color: blue;
+	padding: 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<table>
+
+	<tr class="header_footer"> <!-- 1.row -->
+		<td colspan="6" class="light_blue">
+			.header
+		</td>
+	</tr>
+	<tr> <!-- 2.row -->
+		<td color="white"> <!-- 1. column -->
+			nicht sichtbar
+		</td>
+		<td colspan="3" class="green"> <!-- 2., 3. und 4. column -->
+			.main-content
+		</td>
+		<td class="purple"> <!-- 5. column -->
+			.sidebar
+		</td>
+		<td color="white"> <!-- 6. column -->
+			nicht sichtbar
+		</td>
+	</tr>
+	<tr> <!-- 3.row -->
+		<td color="white"> <!-- 1. column -->
+			nicht sichtbar
+		</td>
+		<td colspan="2" class="orange"> <!-- 2. und 3. column -->
+			.twin
+		</td>
+		<td colspan="2" style="width:25%" class="orange"> <!-- 4. und 5. column -->
+			.twin
+		</td>
+		<td color="white"> <!-- 6. column -->
+			nicht sichtbar
+		</td>
+	</tr>
+	<tr class="header_footer"> <!-- 4.row -->
+		<td colspan="6" class="blue">
+			.footer
+		</td>
+	</tr>
+
+</table>
+
+</body>
+
+</html>

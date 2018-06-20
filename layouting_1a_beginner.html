@@ -1,0 +1,98 @@
+<html>
+
+<head>
+
+<style>
+
+table {
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-weight: bold;
+}
+
+.header_footer {
+	height: 60px;
+}
+
+.light_blue {
+	background-color: deepskyblue;
+	padding: 20px;
+}
+
+.green {
+	background-color: green;
+	text-align: center;
+	<!-- width: 35%; --> <!-- funktioniert nicht, da sich Zeile 2 und Zeile 3 so nicht unabhängig voneinander ändern lassen -->
+	<!-- siehe zweiten Ansatz mit layouting_1b_beginner.html -->
+}
+
+.purple {
+	background-color: purple;
+	text-align: center;
+}
+
+.orange{
+	background-color: orange;
+	text-align: center;
+	<!-- width: 25%; --> <!-- funktioniert nicht, da sich Zeile 2 und Zeile 3 so nicht unabhängig voneinander ändern lassen -->
+	<!-- siehe zweiten Ansatz mit layouting_1b_beginner.html -->
+}
+
+.blue {
+	background-color: blue;
+	padding: 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<table>
+
+	<tr class="header_footer"> <!-- 1.row -->
+		<td colspan="4" class="light_blue">
+			.header
+		</td>
+	</tr>
+	<tr> <!-- 2.row -->
+		<td color="white"> <!-- 1. column -->
+			nicht sichtbar
+		</td>
+		<td class="green"> <!-- 2. column -->
+			.main-content
+		</td>
+		<td class="purple"> <!-- 3. column -->
+			.sidebar
+		</td>
+		<td color="white"> <!-- 4. column -->
+			nicht sichtbar
+		</td>
+	</tr>
+	<tr> <!-- 3.row -->
+		<td color="white"> <!-- 1. column -->
+			nicht sichtbar
+		</td>
+		<td class="orange"> <!-- 2. column -->
+			.twin
+		</td>
+		<td class="orange"> <!-- 3. column -->
+			.twin
+		</td>
+		<td color="white"> <!-- 4. column -->
+			nicht sichtbar
+		</td>
+	</tr>
+	<tr class="header_footer"> <!-- 4.row -->
+		<td colspan="4" class="blue">
+			.footer
+		</td>
+	</tr>
+
+</table>
+
+</body>
+
+</html>

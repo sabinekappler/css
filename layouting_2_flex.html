@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<style>
+
+body {
+	 display: flex:
+	 flex-direction: row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+}
+
+.blue {
+	height: 100px;
+	width: 100%;
+	display: flex;
+	background-color: blue;
+}
+
+.red {
+	display: flex;
+	background-color: red;
+	flex: 1;
+}
+
+.green {
+	width: auto;
+	display: flex;
+	background-color: green;
+	flex: 1;
+}
+
+.yellow {
+	display: flex;
+	background-color: yellow;
+	flex: 1;
+}
+
+.turquoise{
+	display: flex;
+	background-color: turquoise;
+	flex: 1;
+}
+
+.purple{
+	display: flex;
+	background-color: purple;
+	flex: 1;
+}
+
+</style>
+
+<body>
+
+	<div class="body"> <!-- contains 2 rows -->
+		<div class="blue"> <!-- blue element -->
+			Blue Element
+		</div>
+		<div class="row"> <!-- 2. row / contains 2 columns -->
+			<div class="red"> <!-- red element -->
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+				Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
+			</div>
+			<div class="column" style="flex:2"> <!-- 2. column / contains 3 rows -->
+				<div class="green"> <!-- green element -->
+					Green Element
+				</div>
+				<div class="yellow"> <!-- yellow element -->
+					Yellow Element
+				</div>
+				<div class="row" style="flex:1"> <!-- 3. row / contains 2 columns -->
+					<div class	="turquoise"> <!-- turquoise element -->
+						Turquoise Element
+					</div>
+					<div class="purple"> <!-- purple element -->
+						Purple Element
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+
+
+<html>
+
+<head>
+
+	<style>
+	
+	html, body {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	body > div {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.row{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex: 1;
+		width: 80 %;
+	}
+	
+	.column{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.light_blue {
+		display: flex;
+		flex-direction: row;
+		height: 60px;
+		margin-bottom: 5px;
+		background-color: deepskyblue;
+	}
+	
+	.green {
+		display: flex;
+		width: 35%;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		background-color: green;
+	}
+
+	.purple {
+		display: flex;
+		width: 15%;
+		margin-bottom: 5px;
+		background-color: purple;
+	}
+
+	.orange{
+		display: flex;
+		width: 25%;
+		background-color: orange;
+	}
+
+	.blue {
+		display: flex;
+		height: 60px;
+		background-color: blue;
+		margin-top: 5px;
+	}
+	
+	</style>
+
+</head>
+
+<body>
+
+	<div>
+		<div class="light_blue">
+			.header
+		</div>
+		
+		<div class="row">
+			<div class="green">
+				.main-content
+			</div>
+			
+			<div class="purple">
+				.sidebar
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="orange">
+				.twin
+			</div>
+			
+			<div class="orange">
+				.twin
+			</div>
+		</div>
+		
+		<div class="blue">
+			.footer
+		</div>
+	</div>
+
+</body>
+
+</html>

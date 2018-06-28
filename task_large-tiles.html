@@ -1,0 +1,400 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+<style>
+
+body, html {
+	background-color: whiteSmoke;
+}
+
+.tiles > div {
+	display: flex;
+	border: 1px solid black;
+}
+
+.large-tiles > div {
+	display: block;
+}
+
+.large-tiles .zf-font {
+	margin-left: 10px;
+}
+
+.tiles .zf-font {
+	margin-left: 10px;
+	display: flex;
+	width: 25%;
+}
+
+.tiles .currentModules {
+	display: flex;
+	flex-wrap: wrap;
+	width: 75%;
+}
+
+.large-tiles .currentModules {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.large-tiles .module-widget {
+	display: block;
+	border: 1px solid black;
+	width: 30%;
+	margin: 1%;
+	background-color: white;
+}
+
+.tiles .module-widget > div {
+	padding: 15px;
+	width: 150px;
+}
+
+.tiles .left {
+	display: flex;
+	flex-direction: column;
+	width: 170px;
+	text-align: center;
+}
+
+.tiles img {
+	max-width: 32px;
+	align-self: center;
+}
+
+.large-tiles img {
+	max-width: 20px;
+	border: 1px solid;
+	vertical-align: middle;
+}
+
+a:-webkit-any-link {
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	text-decoration: unset;
+}
+
+.large-tiles p {
+	display: block;
+}
+
+</style>
+
+<a href="#" class="switchLayout">
+	Togglelayout
+</a>
+<script type="text/javascript">
+$(".switchLayout").click(function() {
+	$(".tiles").toggleClass("large-tiles");
+});
+</script>
+<div class="tiles">
+	<div>	
+                                <h2 class="zf-font">Kassensystem</h2>
+
+                                <div class="flex-row flex-widgets-small currentModules">
+                                    
+                                        <section class="module-widget">
+                                            <div>
+                                                <div class="left">
+                                                    <img src="https://cdn.belbo.com/office/assets/icons/cash.png">
+
+                                                    <a class="header loadFromServer" href="#checkoutModeEditor" data-additionaldata="">
+                                                        Kassensystem
+                                                    </a>
+                                                    <p style="margin: 10px 0px 0px">
+                                                        Kassieren von Terminen, Ausgaben, Rechnungsformat, Kontenplan und Statistiken.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    
+                                        <section class="module-widget">
+                                            <div>
+                                                <div class="left">
+                                                    <img src="https://cdn.belbo.com/office/assets/icons/baggage_cart_box@2x.png">
+
+                                                    <a class="header loadFromServer" href="#productModeEditor" data-additionaldata="">
+                                                        Warenwirtschaft
+                                                    </a>
+                                                    <p style="margin: 10px 0px 0px">
+                                                        Verwalten Sie Ihre Verkaufsprodukte in Belbo und behalten Sie den Überblick über Ihren Bestand. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    
+                                </div>
+                     </div>       
+                     <div>
+                                <h2 class="zf-font">Onlinebuchung</h2>
+
+                                <div class="flex-row flex-widgets-small currentModules">
+                                    
+                                        <section class="module-widget">
+                                            <div>
+                                                <div class="left">
+                                                    <img src="https://cdn.belbo.com/office/assets/icons/db_cart.png">
+
+                                                    <a class="header loadFromServer" href="#onlineBookingModeEditor" data-additionaldata="">
+                                                        Onlinebuchung
+                                                    </a>
+                                                    <p style="margin: 10px 0px 0px">
+                                                        Onlinebuchung für Ihre Kunden, Benachrichtigungs- und Zeiteinstellungen.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    
+                                        <section class="module-widget">
+                                            <div>
+                                                <div class="left">
+                                                    <img src="https://cdn.belbo.com/office/assets/icons/next_comment@2x.png">
+
+                                                    <a class="header loadFromServer" href="#bookingProcessModeEditor" data-additionaldata="">
+                                                        Buchungsprozess
+                                                    </a>
+                                                    <p style="margin: 10px 0px 0px">
+                                                        Eigene Buchung für jeden Kundenstatus oder Abfrage bestimmter Daten, bevor die Leistungen zur Buchung gezeigt werden.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    
+                                        <section class="module-widget">
+                                            <div>
+                                                <div class="left">
+                                                    <img src="https://cdn.belbo.com/office/assets/icons/user_judge@2x.png">
+
+                                                    <a class="header loadFromServer" href="#bookingTermsModeEditor" data-additionaldata="">
+                                                        AGB
+                                                    </a>
+                                                    <p style="margin: 10px 0px 0px">
+                                                        Bei der Buchung eines Termins muss der Kunde einer von Ihnen bestimmte AGB bestätigen.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    
+                                        <section class="module-widget">
+                                            <div>
+                                                <div class="left">
+                                                    <img src="https://cdn.belbo.com/office/assets/icons/group_add@2x.png">
+
+                                                    <a class="header loadFromServer" href="#multipleServicersModeEditor" data-additionaldata="">
+                                                        Mehrere Mitarbeiter auswählen
+                                                    </a>
+                                                    <p style="margin: 10px 0px 0px">
+                                                        Ermöglichen Sie bei der Online-Buchung, dass vom Kunden unterschiedliche Mitarbeiter ausgesucht werden können.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    
+                                </div>
+                             </div>       
+                     <div>
+
+                                <h2 class="zf-font">Allgemein</h2>
+
+                                <div class="flex-row flex-widgets-small currentModules">
+                                    
+                                        <section class="module-widget">
+                                            <div>
+                                                <div class="left">
+                                                    <img src="https://cdn.belbo.com/office/assets/icons/oms_new_text_message@2x.png">
+
+                                                    <a class="header loadFromServer" href="#smsModeEditor" data-additionaldata="">
+                                                        SMS-Versand
+                                                    </a>
+                                                    <p style="margin: 10px 0px 0px">
+                                                        Versenden Sie Erinnerungs-SMS oder Rundeschreiben direkt an Ihre Kunden.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    
+                                        <section class="module-widget">
+                                            <div>
+                                                <div class="left">
+                                                    <img src="https://cdn.belbo.com/office/assets/icons/stats.png">
+
+                                                    <a class="header loadFromServer" href="#mobileAppointments" data-additionaldata="">
+                                                        Informationen
+                                                    </a>
+                                                    <p style="margin: 10px 0px 0px">
+                                                        Wichtige Statistiken, Reports und Exporte Ihrer Termine und Arbeitszeiten.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    
+                                        <section class="module-widget">
+                                            <div>
+                                                <div class="left">
+                                                    <img src="https://cdn.belbo.com/office/assets/icons/shared_private@2x.png">
+
+                                                    <a class="header loadFromServer" href="#privacyModeEditor" data-additionaldata="">
+                                                        Datenschutz
+                                                    </a>
+                                                    <p style="margin: 10px 0px 0px">
+                                                        Aktivieren Sie die Hilfsmittel sowie Einstellungen, um die gesetzlichen Vorgaben der Datenschutz-Grundverordnung zu erfüllen.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    
+                                </div>
+                             </div>       
+                     <div>
+
+                                <h2 class="zf-font">Kalender</h2>
+
+                                <div class="flex-row flex-widgets-small currentModules">
+                                    
+                                        <section class="module-widget">
+                                            <div>
+                                                <div class="left">
+                                                    <img src="https://cdn.belbo.com/office/assets/icons/user_waiter@2x.png">
+
+                                                    <a class="header loadFromServer" href="#waitlistEditor" data-additionaldata="">
+                                                        Warteliste
+                                                    </a>
+                                                    <p style="margin: 10px 0px 0px">
+                                                        Nutzen Sie die Warteliste, um bei einer Absage zu wissen, wer an dem Termin interessiert sein könnte. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    
+                                        <section class="module-widget">
+                                            <div>
+                                                <div class="left">
+                                                    <img src="https://cdn.belbo.com/office/assets/icons/icecream@2x.png">
+
+                                                    <a class="header loadFromServer" href="#extraServiceModeEditor" data-additionaldata="">
+                                                        Zusatzleistungen
+                                                    </a>
+                                                    <p style="margin: 10px 0px 0px">
+                                                        Definieren Sie Zusatzleistungen, die im Kalender oder bei der Onlinebuchung angeboten werden.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    
+                                        <section class="module-widget">
+                                            <div>
+                                                <div class="left">
+                                                    <img src="https://cdn.belbo.com/office/assets/icons/spray_color@2x.png">
+
+                                                    <a class="header loadFromServer" href="#reactionTimeModeEditor" data-additionaldata="">
+                                                        Einwirkzeiten
+                                                    </a>
+                                                    <p style="margin: 10px 0px 0px">
+                                                        Wenn Ihre Dienstleistungen Einwirkzeiten benötigen, während denen der Mitarbeiter einen weiteren Kunden bedienen kann, können Sie diese hier hinzufügen und verwalten.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    
+                                        <section class="module-widget">
+                                            <div>
+                                                <div class="left">
+                                                    <img src="https://cdn.belbo.com/office/assets/icons/trojan_horse@2x.png">
+
+                                                    <a class="header loadFromServer" href="#resourceModeEditor" data-additionaldata="">
+                                                        Ressourcen
+                                                    </a>
+                                                    <p style="margin: 10px 0px 0px">
+                                                        Erstellen Sie Kalenderspalten für Ihre Räume und Geräte, um Doppelbelegungen zu verhindern.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    
+                                        <section class="module-widget">
+                                            <div>
+                                                <div class="left">
+                                                    <img src="https://cdn.belbo.com/office/assets/icons/date_task@2x.png">
+
+                                                    <a class="header loadFromServer" href="#taskModeEditor" data-additionaldata="">
+                                                        Aufgaben
+                                                    </a>
+                                                    <p style="margin: 10px 0px 0px">
+                                                        Erstellen Sie Tagesaufgaben, die Ihren Mitarbeitern zugeordnet werden können.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    
+                                        <section class="module-widget">
+                                            <div>
+                                                <div class="left">
+                                                    <img src="https://cdn.belbo.com/office/assets/icons/outlook_change_view@2x.png">
+
+                                                    <a class="header loadFromServer" href="#calendarProtocolModeEditor" data-additionaldata="">
+                                                        Terminprotokoll
+                                                    </a>
+                                                    <p style="margin: 10px 0px 0px">
+                                                        Mit dem Protokoll können Sie Änderungen schnell und einfach nachvollziehen.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    
+                                </div>
+                             </div>       
+                     <div>
+
+                                <h2 class="zf-font">Kunden</h2>
+
+                                <div class="flex-row flex-widgets-small currentModules">
+                                    
+                                        <section class="module-widget">
+                                            <div>
+                                                <div class="left">
+                                                    <img src="https://cdn.belbo.com/office/assets/icons/script@2x.png">
+
+                                                    <a class="header loadFromServer" href="#voucherModeEditor" data-additionaldata="">
+                                                        Gutscheinmodul
+                                                    </a>
+                                                    <p style="margin: 10px 0px 0px">
+                                                        Verwalten Sie Ihre Gutscheine und erstellen Sie Online-Gutscheincodes für Ihre Kunden.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    
+                                </div>
+                             </div>       
+                     <div>
+
+                                <h2 class="zf-font">Dienstplanung</h2>
+
+                                <div class="flex-row flex-widgets-small currentModules">
+                                    
+                                        <section class="module-widget">
+                                            <div>
+                                                <div class="left">
+                                                    <img src="https://cdn.belbo.com/office/assets/icons/outlook_calendar_shedule_view@2x.png">
+
+                                                    <a class="header loadFromServer" href="#shiftsModeEditor" data-additionaldata="">
+                                                        Schichtenplanung
+                                                    </a>
+                                                    <p style="margin: 10px 0px 0px">
+                                                        Definieren Sie Schicht-Vorlagen für regelmäßige Arbeitspläne.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    
+                                </div>
+                            
+
+                        </div>
+                        </div>
+</body>
+</html>
